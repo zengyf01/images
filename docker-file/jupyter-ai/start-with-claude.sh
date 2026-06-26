@@ -32,8 +32,5 @@ else
     echo "Warning: ANTHROPIC_BASE_URL or ANTHROPIC_AUTH_TOKEN not set. Claude Code will try default Anthropic endpoint."
 fi
 
-# 卸载不兼容的 nbdime 扩展
-pip3 uninstall -y nbdime 2>/dev/null || true
-
-# 启动 JupyterLab 以 root 用户运行
-exec jupyter lab --allow-root --NotebookApp.token='' --NotebookApp.password=''
+# 启动 JupyterLab 以 root 用户运行（启用认证）
+exec jupyter lab --allow-root --NotebookApp.token="${JUPYTER_TOKEN:-}"
