@@ -79,7 +79,7 @@
 
 
 
-## kaniko-jupyterlab1.10.0b0 基础镜像 （支持kaniko（jupyter中构建镜像），推荐）
+## kaniko-jupyterlab  基础镜像 （支持kaniko（jupyter中构建镜像），推荐）
     
     FROM r.mayishangshu.cn:82/public/jupyterlab:1.0
     
