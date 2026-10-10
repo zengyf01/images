@@ -1,11 +1,11 @@
 
-# 该版本基于1.0，修复了跨域和远程访问支持
+# 提交了kaniko
 
 # 进入项目目录
 cd D:\project\images\docker-file\jupyter
 
 # 构建镜像
-docker build -t kaniko-jupyterlab:1.0 .
+docker build -t kaniko-jupyterlab:1.0 ./1.0
 
 
 # 打标签并推送到仓库

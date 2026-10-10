@@ -5,7 +5,7 @@
 cd D:\project\images\docker-file\jupyter
 
 # 构建镜像
-docker build --no-cache -t kaniko-jupyterlab:2.0 .
+docker build --no-cache -t kaniko-jupyterlab:2.0 ./2.0
 
 
 # 打标签并推送到仓库
